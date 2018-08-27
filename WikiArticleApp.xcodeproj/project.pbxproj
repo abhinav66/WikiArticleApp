@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1839147F2134606C0015B74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839147E2134606C0015B74A /* AppDelegate.swift */; };
+		183914812134606C0015B74A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914802134606C0015B74A /* ViewController.swift */; };
+		183914842134606C0015B74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183914822134606C0015B74A /* Main.storyboard */; };
+		183914872134606C0015B74A /* WikiArticleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 183914852134606C0015B74A /* WikiArticleApp.xcdatamodeld */; };
+		183914892134606C0015B74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183914882134606C0015B74A /* Assets.xcassets */; };
+		1839148C2134606C0015B74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1839148A2134606C0015B74A /* LaunchScreen.storyboard */; };
+		18391499213467590015B74A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18391498213467590015B74A /* APIManager.swift */; };
+		1839149B2134679B0015B74A /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839149A2134679B0015B74A /* APIHelper.swift */; };
+		1839149D213468840015B74A /* APIWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839149C213468840015B74A /* APIWiki.swift */; };
+		183914A221346A470015B74A /* WikiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914A121346A470015B74A /* WikiViewModel.swift */; };
+		183914A521346D940015B74A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914A421346D940015B74A /* CoreDataStack.swift */; };
+		183914AB21347B0C0015B74A /* WikiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914AA21347B0C0015B74A /* WikiTableViewCell.swift */; };
+		183914B1213484CE0015B74A /* Pages+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914AF213484CE0015B74A /* Pages+CoreDataClass.swift */; };
+		183914B2213484CE0015B74A /* Pages+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914B0213484CE0015B74A /* Pages+CoreDataProperties.swift */; };
+		183914B42134869F0015B74A /* WikiWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183914B32134869F0015B74A /* WikiWebviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1839147B2134606B0015B74A /* WikiArticleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiArticleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1839147E2134606C0015B74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183914802134606C0015B74A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		183914832134606C0015B74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183914862134606C0015B74A /* WikiArticleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WikiArticleApp.xcdatamodel; sourceTree = "<group>"; };
+		183914882134606C0015B74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1839148B2134606C0015B74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1839148D2134606C0015B74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18391498213467590015B74A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1839149A2134679B0015B74A /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		1839149C213468840015B74A /* APIWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWiki.swift; sourceTree = "<group>"; };
+		183914A121346A470015B74A /* WikiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewModel.swift; sourceTree = "<group>"; };
+		183914A421346D940015B74A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		183914AA21347B0C0015B74A /* WikiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTableViewCell.swift; sourceTree = "<group>"; };
+		183914AF213484CE0015B74A /* Pages+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pages+CoreDataClass.swift"; sourceTree = "<group>"; };
+		183914B0213484CE0015B74A /* Pages+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pages+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		183914B32134869F0015B74A /* WikiWebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiWebviewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183914782134606B0015B74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183914722134606B0015B74A = {
+			isa = PBXGroup;
+			children = (
+				1839147D2134606B0015B74A /* WikiArticleApp */,
+				1839147C2134606B0015B74A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1839147C2134606B0015B74A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1839147B2134606B0015B74A /* WikiArticleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1839147D2134606B0015B74A /* WikiArticleApp */ = {
+			isa = PBXGroup;
+			children = (
+				183914A321346B550015B74A /* Model */,
+				18391497213467280015B74A /* ViewModel */,
+				183914962134667B0015B74A /* DataModel */,
+				18391495213466150015B74A /* Resources */,
+				18391494213466090015B74A /* API */,
+				18391493213465400015B74A /* View */,
+				1839148A2134606C0015B74A /* LaunchScreen.storyboard */,
+				1839148D2134606C0015B74A /* Info.plist */,
+			);
+			path = WikiArticleApp;
+			sourceTree = "<group>";
+		};
+		18391493213465400015B74A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1839147E2134606C0015B74A /* AppDelegate.swift */,
+				183914802134606C0015B74A /* ViewController.swift */,
+				183914822134606C0015B74A /* Main.storyboard */,
+				183914AA21347B0C0015B74A /* WikiTableViewCell.swift */,
+				183914B32134869F0015B74A /* WikiWebviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18391494213466090015B74A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				18391498213467590015B74A /* APIManager.swift */,
+				1839149A2134679B0015B74A /* APIHelper.swift */,
+				1839149C213468840015B74A /* APIWiki.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		18391495213466150015B74A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				183914882134606C0015B74A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		183914962134667B0015B74A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				183914852134606C0015B74A /* WikiArticleApp.xcdatamodeld */,
+				183914A421346D940015B74A /* CoreDataStack.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		18391497213467280015B74A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				183914A121346A470015B74A /* WikiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		183914A321346B550015B74A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				183914AF213484CE0015B74A /* Pages+CoreDataClass.swift */,
+				183914B0213484CE0015B74A /* Pages+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1839147A2134606B0015B74A /* WikiArticleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183914902134606C0015B74A /* Build configuration list for PBXNativeTarget "WikiArticleApp" */;
+			buildPhases = (
+				183914772134606B0015B74A /* Sources */,
+				183914782134606B0015B74A /* Frameworks */,
+				183914792134606B0015B74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiArticleApp;
+			productName = WikiArticleApp;
+			productReference = 1839147B2134606B0015B74A /* WikiArticleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183914732134606B0015B74A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Abhinav;
+				TargetAttributes = {
+					1839147A2134606B0015B74A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 183914762134606B0015B74A /* Build configuration list for PBXProject "WikiArticleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183914722134606B0015B74A;
+			productRefGroup = 1839147C2134606B0015B74A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1839147A2134606B0015B74A /* WikiArticleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183914792134606B0015B74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1839148C2134606C0015B74A /* LaunchScreen.storyboard in Resources */,
+				183914892134606C0015B74A /* Assets.xcassets in Resources */,
+				183914842134606C0015B74A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183914772134606B0015B74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18391499213467590015B74A /* APIManager.swift in Sources */,
+				183914872134606C0015B74A /* WikiArticleApp.xcdatamodeld in Sources */,
+				183914B42134869F0015B74A /* WikiWebviewViewController.swift in Sources */,
+				183914B2213484CE0015B74A /* Pages+CoreDataProperties.swift in Sources */,
+				183914812134606C0015B74A /* ViewController.swift in Sources */,
+				1839149B2134679B0015B74A /* APIHelper.swift in Sources */,
+				1839149D213468840015B74A /* APIWiki.swift in Sources */,
+				183914A221346A470015B74A /* WikiViewModel.swift in Sources */,
+				1839147F2134606C0015B74A /* AppDelegate.swift in Sources */,
+				183914AB21347B0C0015B74A /* WikiTableViewCell.swift in Sources */,
+				183914B1213484CE0015B74A /* Pages+CoreDataClass.swift in Sources */,
+				183914A521346D940015B74A /* CoreDataStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		183914822134606C0015B74A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183914832134606C0015B74A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1839148A2134606C0015B74A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1839148B2134606C0015B74A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1839148E2134606C0015B74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1839148F2134606C0015B74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183914912134606C0015B74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikiArticleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WikiArticleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		183914922134606C0015B74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikiArticleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WikiArticleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183914762134606B0015B74A /* Build configuration list for PBXProject "WikiArticleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1839148E2134606C0015B74A /* Debug */,
+				1839148F2134606C0015B74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183914902134606C0015B74A /* Build configuration list for PBXNativeTarget "WikiArticleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183914912134606C0015B74A /* Debug */,
+				183914922134606C0015B74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		183914852134606C0015B74A /* WikiArticleApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				183914862134606C0015B74A /* WikiArticleApp.xcdatamodel */,
+			);
+			currentVersion = 183914862134606C0015B74A /* WikiArticleApp.xcdatamodel */;
+			path = WikiArticleApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 183914732134606B0015B74A /* Project object */;
+}
